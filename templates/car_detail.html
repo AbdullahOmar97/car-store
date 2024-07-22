@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Car Detail{% endblock %}
+
+{% block content %}
+<h1>Car Detail</h1>
+<p>Model: {{ object.model }}</p>
+<p>Brand: {{ object.brand }}</p>
+<p>Price: {{ object.price }}</p>
+<p>Is Bought: {{ object.is_bought }}</p>
+<p>Buyer: {{ object.buyer }}</p>
+<p>Buy Time: {{ object.buy_time }}</p>
+<a href="{% url 'car_update' object.pk %}">Update</a>
+<a href="{% url 'car_delete' object.pk %}">Delete</a>
+<a href="{% url 'car_list' %}">Back to list</a>
+{% endblock %}

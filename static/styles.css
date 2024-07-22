@@ -1,0 +1,8 @@
+/* Custom styles */
+body {
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+footer {
+    background-color: #f8f9fa;
+}
